@@ -30,7 +30,7 @@ nav {
 	text-align: right;
 }
 
-*:not (.opendys, .code) {
+.normtxt {
 	font-family: "Literata", serif;
 }
 
