@@ -3,6 +3,44 @@
 	src: url(fonts/OpenDyslexic/OpenDyslexicNerdFont-Regular.woff2) format(woff2);
 }
 
+:root {
+	/* Colors */
+	--rosewater: #f5e0dc;
+	--flamingo:  #f2cdcd;
+	--pink:      #f5c2e7;
+	--mauve:     #cba6f7;
+	--red:       #f38ba8;
+	--maroon:    #eba0ac;
+	--peach:     #fab387;
+	--yellow:    #f9e2af;
+	--green:     #a6e3a1;
+	--teal:      #94e2d5;
+	--sky:       #89dceb;
+	--sapphire:  #74c7ec;
+	--blue:      #89b4fa;
+	--lavender:  #b4befe;
+
+	/* Text */
+	--text:      #cdd6f4;
+	--subtext1:  #bac2de;
+	--subtext0:  #a6adc8;
+
+	/* Overlays */
+	--overlay2:  #9399b2;
+	--overlay1:  #7f849c;
+	--overlay0:  #6c7086;
+
+	/* Surfaces */
+	--surface2: #585b70;
+	--surface1: #45475a;
+	--surface0: #313244;
+
+	/* Background */
+	--base:     #1e1e2e;
+	--mantle:   #181825;
+	--crust:    #11111b;
+}
+
 @font-face {
 	font-family: Literata;
 	src: url(fonts/Literata/LiterataNerdFont-Regular.woff2) format(woff2);
@@ -17,6 +55,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	background-color: var(--mantle);
 }
 
 .navbar {
@@ -30,12 +69,39 @@ nav {
 	text-align: right;
 }
 
+nav ul {
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text); 
+}
+
+p {
+	color: var(--text);
+}
+
+.container {
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 .normtxt {
 	font-family: "Literata", serif;
 }
 
 .opendys {
 	font-family: "OpenDyslexic", sans-serif;
+	font-size: 14px;
 }
 
 .code {
